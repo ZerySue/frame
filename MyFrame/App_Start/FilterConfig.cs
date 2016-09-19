@@ -10,6 +10,7 @@ namespace MyFrame
         {
             filters.Add(new HandleErrorAttribute());
             filters.Add(new PermissionFilterAttribute());
+            filters.Add(new ExceptionHandleAttribute());
         }
     }
 }

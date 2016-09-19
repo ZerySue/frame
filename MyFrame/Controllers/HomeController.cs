@@ -10,6 +10,8 @@ namespace MyFrame.Controllers
     {
         public ActionResult Index()
         {
+            int a = 10, b = 0;
+            var c = a / b;
             return View();
         }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyFrame.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,6 +19,9 @@ namespace MyFrame
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            //方法1. 自定义事件注册 利用.net MessageQueue 实现 错误日志并发时 放到消息队列中
+            MessageQueueConfig.RegisterExceptionLogQueue();
         }
     }
 }
