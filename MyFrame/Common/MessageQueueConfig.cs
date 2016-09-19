@@ -24,7 +24,7 @@ namespace MyFrame.Common
                             Exception ex = ExceptionHandleAttribute.ExceptionQueue.Dequeue();
                             if(ex!=null)
                             {
-                                //写日志
+                                //写日志  
                                 Log log = Log.CreateInstance();
                                 log.WriteLog(ex.Message.ToString());
                             }
