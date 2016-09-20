@@ -1,8 +1,8 @@
-﻿using MyFrame.Filter;
+﻿using frame0.Filter;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MyFrame
+namespace frame0
 {
     public class FilterConfig
     {
@@ -10,7 +10,7 @@ namespace MyFrame
         {
             filters.Add(new HandleErrorAttribute());
             //filters.Add(new PermissionFilterAttribute());
-            filters.Add(new ExceptionHandleAttribute());
+           // filters.Add(new ExceptionHandleAttribute());
         }
     }
 }

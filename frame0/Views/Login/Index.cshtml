@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <form action="Login/Login">
+            <label for="userName">账号：</label>    <input id="userName" type="text" placeholder="手机号/邮箱" style="width:80%" /><br />
+            <label for="pwd">密码：</label>    <input id="userName" type="password" placeholder="密码" style="width:80%" />
+            <input type="button" onclick="login()" value="登陆">
+        </form>
+    </div>
+    <script>
+        function login()
+        {
+            location.href="../Home/Index"
+        }
+    </script>
+</body>
+</html>

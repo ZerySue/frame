@@ -3,7 +3,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
 
-namespace MyFrame
+namespace frame0
 {
     public partial class Startup
     {
