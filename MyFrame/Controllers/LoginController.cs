@@ -12,11 +12,13 @@ namespace MyFrame.Controllers
     {
         //
         // GET: /Login/
+        [AllowAnonymous]
         public ActionResult Index()
         { 
             return View();
         }
         [HttpPost]
+        [AllowAnonymous]
         public JsonResult Login(LoginViewModel userInfo)
         {
 

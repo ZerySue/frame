@@ -39,11 +39,7 @@ namespace MyFrame.Filter
         {
             string cName = filterContext.ActionDescriptor.ControllerDescriptor.ControllerName;
 
-            string loaclPath = HttpContext.Current.Request.Url.LocalPath.ToLower();
-            if(loaclPath!=("/Login/Index").ToLower())
-            {
-
-            }
+            string loaclPath = HttpContext.Current.Request.Url.LocalPath.ToLower(); 
             if (cName.ToLower() == "Login")
             {
                 filterContext.Result = new RedirectResult("/Login/Index");
