@@ -1,0 +1,29 @@
+﻿body {
+    font: normal 100%;
+}
+/*然后，h1的大小是默认大小的1.5倍，即24像素（24/16=1.5）*/
+h1 {
+    font-size: 1.5em;
+}
+ .lgoin{
+      width:80%;
+    font-size:1em;
+}
+
+small {
+    font-size: 0.875em;
+}
+
+.main {
+    float: right;
+    width: 70%;
+}
+
+.leftBar {
+    float: left;
+    width: 25%;
+}
+
+img {
+    max-width: 100%;
+}

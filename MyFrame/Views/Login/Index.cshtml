@@ -8,32 +8,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" type="text/css"   href="../Content/Base.css" />
 </head>
 <body>
-    <div style="text-align:center">
-        <form > 
-            <label for="userName">账号：</label>    <input id="userName" type="text" placeholder="手机号/邮箱" style="width:80%" /><br/>
-            <label for="pwd">密码：</label>    <input id="userName" type="password" placeholder="密码" style="width:80%" /><br/>
-            <input type="checkbox" checked="checked" id="remember"><label for="remember">记住密码</label><br/>
+    <h1>welcome to visit  t3t.pub</h1>
+    <small>welcome to visit  t3t.pub</small>
+        <div style="text-align:center">
+            <form>
+                <label for="userName">账号：</label>    <input id="userName" type="text" placeholder="手机号/邮箱" class="lgoin" /><br />
+                <label for="pwd">密码：</label>    <input id="userName" type="password" placeholder="密码" class="lgoin" /><br />
+                <input type="checkbox" checked="checked" id="remember"><label for="remember">记住密码</label><br />
 
-              <input type="button" onclick="login()" value="登陆">
+                <input type="button" onclick="login()" value="登陆">
 
-          
 
-         </form>
-    </div>
-    <script>
-        function login() {
-            $.post("Login/Login", { "UserName": "", "Password": "123", "RememberMe": true }, function (data)
-            {
-                if (data.success)
-                {
-                    location.href = "../Home/Index";
-                }
-            })
-            
-        }
-    </script>
+
+            </form>
+        </div>
+        <script>
+            function login() {
+                $.post("Login/Login", { "UserName": "", "Password": "123", "RememberMe": true }, function (data) {
+                    if (data.success) {
+                        location.href = "../Home/Index";
+                    }
+                })
+
+            }
+        </script>
 
 </body>
 </html>
