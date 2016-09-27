@@ -1,4 +1,5 @@
 ﻿using MyFrame.Helper;
+ 
 using MyFrame.Models;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,11 @@ namespace MyFrame.Controllers
         // GET: /Login/
         [AllowAnonymous]
         public ActionResult Index()
-        { 
+        {
+            var user = DALFactory.DataAccess.CreateObject<UserManager>();
+            UserModel dd=new UserModel();
+
+             var aa= user.GetDaga(dd);
             return View();
         }
         [HttpPost]

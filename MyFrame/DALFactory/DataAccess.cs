@@ -28,7 +28,7 @@ namespace MyFrame.DALFactory
             obj = DataCache.GetCache(typeName);
             if (obj == null)
             {
-                //反射创建
+                //反射创建 
                 obj = Assembly.Load(path).CreateInstance(path + typeName);
                 DataCache.SetCache(typeName, obj);
             }

@@ -194,6 +194,8 @@
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="DALFactory\DataAccess.cs" />
+    <Compile Include="DALFactory\DataCache.cs" />
     <Compile Include="Filter\ExceptionHandleAttribute.cs" />
     <Compile Include="Filter\PermissionFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -204,10 +206,14 @@
     <Compile Include="Helper\DBHelper.cs" />
     <Compile Include="HttpManager\HttpController.cs" />
     <Compile Include="HttpManager\HttpHelper.cs" />
+    <Compile Include="IManager\IAUDRManager.cs" />
+    <Compile Include="IManager\IUserManager.cs" />
     <Compile Include="LogManager\Log.cs" />
+    <Compile Include="Manager\UserManager.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ResultModel.cs" />
+    <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RedisController\HashOperator.cs" />
     <Compile Include="RedisController\RedisConfigInfo.cs" />
@@ -267,8 +273,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="IManager\" />
-    <Folder Include="Manager\" />
     <Folder Include="ref_DLL\" />
   </ItemGroup>
   <ItemGroup>
