@@ -206,9 +206,9 @@
     <Compile Include="Helper\DBHelper.cs" />
     <Compile Include="HttpManager\HttpController.cs" />
     <Compile Include="HttpManager\HttpHelper.cs" />
-    <Compile Include="IManager\IAUDRManager.cs" />
     <Compile Include="IManager\IUserManager.cs" />
     <Compile Include="LogManager\Log.cs" />
+    <Compile Include="IManager\IAUDRManager.cs" />
     <Compile Include="Manager\UserManager.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -229,6 +229,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\bg.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

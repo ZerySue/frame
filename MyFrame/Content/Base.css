@@ -1,13 +1,23 @@
 ﻿body {
     font: normal 100%;
+    background: url("../images/bg.jpg") center 0 no-repeat fixed;
+}
+
+.login {
+    width: 50%;
+    height: 50%;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*然后，h1的大小是默认大小的1.5倍，即24像素（24/16=1.5）*/
 h1 {
     font-size: 1.5em;
 }
- .lgoin{
-      width:80%;
-    font-size:1em;
+
+.lgoin {
+    width: 80%;
+    font-size: 1em;
 }
 
 small {

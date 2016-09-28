@@ -10,9 +10,10 @@
     <script src="../Scripts/jquery-1.10.2.min.js"></script>
     <link rel="stylesheet" type="text/css"   href="../Content/Base.css" />
 </head>
-<body>
-    <h1>welcome to visit  t3t.pub</h1>
-    <small>welcome to visit  t3t.pub</small>
+<body> 
+    <div class="login">
+        <h1>welcome to visit  t3t.pub</h1>
+        <small>welcome to visit  t3t.pub</small>
         <div style="text-align:center">
             <form>
                 <label for="userName">账号：</label>    <input id="userName" type="text" placeholder="手机号/邮箱" class="lgoin" /><br />
@@ -24,7 +25,9 @@
 
 
             </form>
+            <canvas id="diagonal" style="border:1px solid;" width="200" height="200"></canvas>
         </div>
+    </div>
         <script>
             function login() {
                 $.post("Login/Login", { "UserName": "", "Password": "123", "RememberMe": true }, function (data) {
@@ -34,6 +37,18 @@
                 })
 
             }
+            function drawDiagonal(){
+                //取的canvas元素及其绘图上下文
+                var canvas = document.getElementById("diagonal");
+                var context = canvas.getContext('2d');
+                // 用绝对坐标来创建一条路径
+                context.beginPath();
+                context.moveTo(70,140);
+                context.lineTo(140,70);
+                // 将这条线绘制到canvas上
+                context.stroke();
+            }
+            window.addEventListener('load',drawDiagonal,true);
         </script>
 
 </body>
