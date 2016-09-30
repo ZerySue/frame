@@ -17,7 +17,7 @@ namespace MyFrame.Controllers
         public ActionResult Index()
         {
             var user = DALFactory.DataAccess.CreateObject<UserManager>();
-            UserModel dd=new UserModel();
+            UserModel dd=new UserModel(); 
 
              var aa= user.GetDaga(dd);
             return View();
